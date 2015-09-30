@@ -16,7 +16,7 @@ The official NPM package for Autodesk View & Data API
   ```
 * When using the module in your project, copy the config-view-and-data.js in your server config directory and update
   the credentials as described previously.
-  
+
 ## Test
 
 Make sure to modify defaultBucketKey in config-view-and-data.js then run command:
@@ -30,6 +30,9 @@ Here is a simple example on how to use the library. It will retrieve or create t
 Then it will upload the test.dwf file, monitor it's translation status and get the thumbnail of model if
 the translation is successful.
 
+
+      //Make sure config-view-and-data.js is copied at indicated location
+      //in your server and that you filed up the API credentials as indicated above
 
       var config = require('your-server-config/config-view-and-data');
       var Lmv = require('view-and-data');
