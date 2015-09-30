@@ -1,15 +1,17 @@
-
 # Autodesk View and Data API NPM Package
 
 
 ## Description
-The official NPM package for [Autodesk View & Data API](https://developer.autodesk.com/api/view-and-data-api/)
+
+This is the official [NPM](https://www.npmjs.com) package for
+the [Autodesk View & Data API](https://developer.autodesk.com/api/view-and-data-api/).
+
 
 ## Setup
 
 * As usual:<br>
   ```
-  npm install view-and-data
+  $ npm install view-and-data
   ```
   <br>
   <br>
@@ -23,12 +25,14 @@ The official NPM package for [Autodesk View & Data API](https://developer.autode
 * When using the module in your project, copy the config-view-and-data.js in your server config directory and update
   the credentials as described previously.
 
+
 ## Test
 
 Make sure to set up your consumer key and secret and modify __defaultBucketKey__ in config-view-and-data.js as described above, then run the following commands in the `node_modules/view-and-data/` folder:
 
-    npm install
-    npm test
+    $ npm install
+    $ npm test
+
 
 ## Usage
 
@@ -37,7 +41,6 @@ Here is a simple example on how to use the library. It will retrieve or create t
 see [that article](http://adndevblog.typepad.com/cloud_and_mobile/2015/01/buckets-in-autodesk-view-and-data-api.html) for more details).
 Then it will upload the test.dwf file, monitor it's translation status and get the thumbnail of model if
 the translation is successful.
-
 
       //Make sure config-view-and-data.js is copied at indicated location
       //in your server and that you filed up the API credentials as indicated above
@@ -136,14 +139,15 @@ the translation is successful.
       //start the test
       lmv.initialise().then(onInitialized, onError);
 
+
 ## License
 
 [MIT License](http://opensource.org/licenses/MIT).
 
+
 ## Written by
 
-[Cyrille Fauvel](http://around-the-corner.typepad.com/adn/cyrille-fauvel.html)
-
-[Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
+- [Cyrille Fauvel](http://around-the-corner.typepad.com/adn/cyrille-fauvel.html)
+- [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
 
 Autodesk Developer Network.
