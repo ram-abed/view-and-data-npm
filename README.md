@@ -7,7 +7,7 @@ The official NPM package for [Autodesk View & Data API](https://developer.autode
 
 ## Setup
 
-* As usual:
+* As usual:<br>
   ```
   npm install view-and-data
   ```
