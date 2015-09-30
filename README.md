@@ -7,7 +7,8 @@ The official NPM package for [Autodesk View & Data API](https://developer.autode
 
 ## Setup
 
-* npm install view-and-data
+* As usual:
+    npm install view-and-data
 * Request your own API keys from our developer portal: [developer.autodesk.com](http://developer.autodesk.com)
 * Replace the placeholders with your own keys in config-view-and-data.js or use ENV variables:<br />
   ```
