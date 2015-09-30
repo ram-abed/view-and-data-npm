@@ -9,26 +9,25 @@ the [Autodesk View & Data API](https://developer.autodesk.com/api/view-and-data-
 
 ## Setup
 
-* As usual:<br>
+- As usual:<br />
   ```
   $ npm install view-and-data
   ```
   <br>
   <br>
-* Request your own API keys from our developer portal: [developer.autodesk.com](http://developer.autodesk.com)
-* Replace the placeholders with your own keys in config-view-and-data.js or use ENV variables:<br />
+- Request your own API keys from our developer portal [developer.autodesk.com](http://developer.autodesk.com).
+- Replace the credentials placeholders with your own keys in `config-view-and-data.js` or use ENV variables:<br />
   ```
   ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>',
-
   ConsumerSecret: process.env.CONSUMERSECRET || '<replace with your consumer secret>'
   ```
-* When using the module in your project, copy the config-view-and-data.js in your server config directory and update
-  the credentials as described previously.
+- Set up the default bucket name defined by the `defaultBucketKey` variable.
+- Copy the file `config-view-and-data.js` to your server config directory.
 
 
 ## Test
 
-Make sure to set up your consumer key and secret and modify __defaultBucketKey__ in config-view-and-data.js as described above, then run the following commands in the `node_modules/view-and-data/` folder:
+Make sure to set up your consumer key and secret and the default bucket name in `config-view-and-data.js` as described above, then run the following commands in the `node_modules/view-and-data/` folder:
 
     $ npm install
     $ npm test
