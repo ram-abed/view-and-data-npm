@@ -42,11 +42,9 @@ module.exports = function(config) {
 
         error = error || {error: res.statusMessage};
 
-        var response = (res.body ? JSON.parse(body) : error)
+        error.statusCode = res.statusCode;
 
-        response.statusCode = res.statusCode;
-
-        reject(response);
+        reject(error);
       }
       catch(ex) {
 
@@ -57,6 +55,7 @@ module.exports = function(config) {
     else {
 
       try {
+
         resolve(JSON.parse(body));
       }
       catch(ex) {
@@ -462,11 +461,9 @@ module.exports = function(config) {
 
             error = error || {error: res.statusMessage};
 
-            var response = (res.body ? JSON.parse(body) : error)
+            error.statusCode = res.statusCode;
 
-            response.statusCode = res.statusCode;
-
-            reject(response);
+            reject(error);
           }
           else {
 
