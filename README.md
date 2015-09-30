@@ -22,7 +22,7 @@ The official NPM package for Autodesk View & Data API
 
 Make sure to modify defaultBucketKey in config-view-and-data.js then run command:
 
-  npm test
+    npm test
 
 ## Usage
 
