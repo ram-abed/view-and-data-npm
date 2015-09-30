@@ -25,8 +25,9 @@ The official NPM package for [Autodesk View & Data API](https://developer.autode
 
 ## Test
 
-Make sure to modify __defaultBucketKey__ in config-view-and-data.js then run command:
+Make sure to set up your consumer key and secret and modify __defaultBucketKey__ in config-view-and-data.js as described above, then run the following commands in the `node_modules/view-and-data/` folder:
 
+    npm install
     npm test
 
 ## Usage
@@ -139,11 +140,10 @@ the translation is successful.
 
 [MIT License](http://opensource.org/licenses/MIT).
 
-## Written by 
+## Written by
 
 [Cyrille Fauvel](http://around-the-corner.typepad.com/adn/cyrille-fauvel.html)
 
 [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
 
 Autodesk Developer Network.
-
