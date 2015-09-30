@@ -25,7 +25,7 @@ The official NPM package for [Autodesk View & Data API](https://developer.autode
 
 ## Test
 
-Make sure to modify defaultBucketKey in config-view-and-data.js then run command:
+Make sure to modify __defaultBucketKey__ in config-view-and-data.js then run command:
 
     npm test
 
