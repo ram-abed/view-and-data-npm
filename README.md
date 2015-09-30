@@ -39,10 +39,13 @@ the translation is successful.
 
       var lmv = new Lmv(config);
 
+      //you probably want a more specific error handler...
       function onError(error) {
         console.log(error);
       }
 
+      //wrapper is initialized. Token refreshment will happen automatically
+      //no need to worry about it
       function onInitialized(response) {
 
         var createIfNotExists = true;
@@ -60,6 +63,7 @@ the translation is successful.
             onError);
       }
 
+      //bucket retrieved or created successfully
       function onBucketCreated(response) {
 
         //see resumableUpload instead for large files
@@ -69,6 +73,7 @@ the translation is successful.
           'test.dwf').then(onUploadCompleted, onError);
       }
 
+      //upload complete
       function onUploadCompleted(response) {
 
         var fileId = response.objects[0].id;
@@ -78,6 +83,8 @@ the translation is successful.
         lmv.register(urn, true).then(onRegister, onError);
       }
 
+      //registration complete but may have failed
+      //need to check result
       function onRegister(response) {
 
         if (response.Result === "Success") {
@@ -95,11 +102,14 @@ the translation is successful.
         }
       }
 
+      //optional translation progress callback
+      //may be used to display progress to user
       function progressCallback(progress) {
 
         console.log(progress);
       }
 
+      //file ready for viewing
       function onTranslationCompleted(response) {
 
         console.log('URN: ' + response.urn);
@@ -107,6 +117,7 @@ the translation is successful.
         lmv.getThumbnail(urn).then(onThumbnail, onError);
       }
 
+      //thumbnail retrieved successfully
       function onThumbnail(response) {
 
         //response: base64 encoded thumbnail data

@@ -84,7 +84,7 @@ module.exports = function(config) {
 
             _refreshToken(arguments.callee);
 
-          }, response.expires_in * 1000);
+          }, (response.expires_in - 60) * 1000);
 
           resolve();
         },
