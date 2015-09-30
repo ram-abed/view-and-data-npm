@@ -3,7 +3,7 @@
 
 
 ## Description
-The official NPM package for Autodesk View & Data API
+The official NPM package for [Autodesk View & Data API](https://developer.autodesk.com/api/view-and-data-api/)
 
 ## Setup
 
@@ -54,7 +54,7 @@ the translation is successful.
         var bucketCreationData = {
           bucketKey: config.defaultBucketKey,
           servicesAllowed: {},
-          policy: "transient"
+          policy: 'transient' //['temporary', 'transient', 'persistent']
         };
 
         lmv.getBucket(config.defaultBucketKey,
