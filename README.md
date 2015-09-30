@@ -32,7 +32,8 @@ Make sure to modify __defaultBucketKey__ in config-view-and-data.js then run com
 ## Usage
 
 Here is a simple example on how to use the library. It will retrieve or create the specified bucket
-(you will need to modify that value in config-view-and-data.js or provide directly a unique bucket name).
+(you will need to modify that value in config-view-and-data.js or provide directly a unique bucket name,
+see [that article](http://adndevblog.typepad.com/cloud_and_mobile/2015/01/buckets-in-autodesk-view-and-data-api.html) for more details).
 Then it will upload the test.dwf file, monitor it's translation status and get the thumbnail of model if
 the translation is successful.
 
