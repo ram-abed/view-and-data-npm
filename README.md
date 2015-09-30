@@ -12,7 +12,7 @@ The official NPM package for Autodesk View & Data API
 * Replace the placeholders with your own keys in config-view-and-data.js or use ENV variables:<br />
   ```
   ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>',
-<br>
+
   ConsumerSecret: process.env.CONSUMERSECRET || '<replace with your consumer secret>'
   ```
 * When using the module in your project, copy the config-view-and-data.js in your server config directory and update
