@@ -9,14 +9,12 @@ the [Autodesk View & Data API](https://developer.autodesk.com/api/view-and-data-
 
 ## Setup
 
-- As usual:<br />
+- As usual:
   ```
   $ npm install view-and-data
   ```
-  <br>
-  <br>
 - Request your own API keys from our developer portal [developer.autodesk.com](http://developer.autodesk.com).
-- Replace the credentials placeholders with your own keys in `config-view-and-data.js` or use ENV variables:<br />
+- Replace the credentials placeholders with your own keys in `config-view-and-data.js` or use ENV variables:
   ```
   ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>',
   ConsumerSecret: process.env.CONSUMERSECRET || '<replace with your consumer secret>'
