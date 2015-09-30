@@ -11,7 +11,7 @@ The official NPM package for Autodesk View & Data API
 * Request your own API keys from our developer portal: [developer.autodesk.com](http://developer.autodesk.com)
 * Replace the placeholders with your own keys in config-view-and-data.js or use ENV variables:<br />
   ```
-  ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>',
+  ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>', <br>
   ConsumerSecret: process.env.CONSUMERSECRET || '<replace with your consumer secret>'
   ```
 * When using the module in your project, copy the config-view-and-data.js in your server config directory and update
