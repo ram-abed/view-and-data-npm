@@ -135,8 +135,9 @@ the translation is successful.
 
 ## Written by 
 
-Written by
 [Cyrille Fauvel](http://around-the-corner.typepad.com/adn/cyrille-fauvel.html)
+
 [Philippe Leefsma](http://adndevblog.typepad.com/cloud_and_mobile/philippe-leefsma.html)
+
 Autodesk Developer Network.
 
