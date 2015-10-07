@@ -25,7 +25,7 @@ var fs = require('fs');
 module.exports = function(config) {
 
   config = _.assign(
-    require(__dirname + 'config-view-and-data'),
+    require('./config-view-and-data'),
     config);
 
   var _self = this;
