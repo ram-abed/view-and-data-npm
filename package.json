@@ -25,10 +25,11 @@
   "homepage": "https://github.com/Developer-Autodesk/view-and-data-npm#readme",
 
   "dependencies": {
-    "async": "^1.4.2",
-    "es6-promise": "^3.0.2",
-    "request": "^2.64.0",
-    "util": "^0.10.3"
+    "async":        "^1.4.2",
+    "es6-promise":  "^3.0.2",
+    "lodash":       "^3.10.1",
+    "request":      "^2.64.0",
+    "util":         "^0.10.3"
   },
 
   "devDependencies": {

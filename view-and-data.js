@@ -19,9 +19,14 @@ var Promise = require('es6-promise').Promise;
 var request = require('request');
 var async = require('async');
 var util = require('util');
+var _ = require('lodash');
 var fs = require('fs');
 
 module.exports = function(config) {
+
+  config = _.assign(
+    require('./config-view-and-data'),
+    config);
 
   var _self = this;
 

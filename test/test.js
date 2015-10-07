@@ -16,10 +16,20 @@
 // UNINTERRUPTED OR ERROR FREE.
 /////////////////////////////////////////////////////////////////////
 var should = require('chai').should(),
-  config = require('../config-view-and-data'),
   Lmv = require('../view-and-data'),
-  path = require('path'),
-  fs = require('fs');
+  path = require('path');
+
+//only fill up credentials & bucket fields, other fields are defaulted
+var config = {
+
+  defaultBucketKey: 'adn-bucket', //!Change that name to a unique one,
+                                  // append ConsumerKey to it for example
+
+  credentials: {
+    ConsumerKey: process.env.CONSUMERKEY || '<replace with your consumer key>',
+    ConsumerSecret: process.env.CONSUMERSECRET || '<replace with your consumer secret>'
+  }
+}
 
 describe('# View & Data Tests: ', function() {
 
@@ -35,6 +45,9 @@ describe('# View & Data Tests: ', function() {
     var lmv = new Lmv(config);
 
     lmv.getToken().then(function(response) {
+
+      console.log('Token Response:');
+      console.log(response);
 
       done();
 
@@ -65,7 +78,7 @@ describe('# View & Data Tests: ', function() {
 
       var bucketCreationData = {
         bucketKey: config.defaultBucketKey,
-        servicesAllowed: {},
+        servicesAllowed: [],
         policy: "transient"
       };
 
@@ -106,7 +119,7 @@ describe('# View & Data Tests: ', function() {
 
       var bucketCreationData = {
         bucketKey: config.defaultBucketKey,
-        servicesAllowed: {},
+        servicesAllowed: [],
         policy: "transient"
       };
 
